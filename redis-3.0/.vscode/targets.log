@@ -1,0 +1,1891 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+cd src && make all
+ 
+# make[1]: Entering directory '/home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0/src'
+ 
+# GNU Make 4.1
+ 
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Aug 15 23:29:44 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 25)
+PREFIX = /usr/local
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = letter
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+SNAP_COMMON = /var/snap/code/common
+# makefile (from 'Makefile', line 105)
+QUIET_INSTALL = @printf '    %b %b\n' $(LINKCOLOR)INSTALL$(ENDCOLOR) $(BINCOLOR)$@$(ENDCOLOR) 1>&2;
+# environment
+XDG_SESSION_TYPE = x11
+# makefile (from '.make-settings', line 7)
+REDIS_CFLAGS = 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 2
+# makefile (from 'Makefile', line 27)
+INSTALL = install
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0/src
+# makefile
+ 
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/104
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_translationsConfigFile":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/tcf.json","_cacheRoot":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /snap/code/104/usr/share/code/code
+# makefile (from 'Makefile', line 17)
+OPTIMIZATION = -O2
+# makefile (from '.make-settings', line 5)
+CFLAGS = 
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile.dep', line 1)
+MAKEFILE_LIST :=  Makefile .make-settings Makefile.dep
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 100)
+ENDCOLOR = "\033[0m"
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 55)
+DEBUG = -g -ggdb
+# environment
+USERNAME = xuegwu
+# environment
+MAKELEVEL := 1
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+CLUTTER_IM_MODULE = xim
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/xuegwu
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 117)
+REDIS_CHECK_AOF_NAME = redis-check-aof
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/xuegwu:@/tmp/.ICE-unix/1332,unix/xuegwu:/tmp/.ICE-unix/1332
+# makefile (from 'Makefile', line 110)
+REDIS_SERVER_OBJ = adlist.o ae.o anet.o dict.o redis.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/xuegwu/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+TEXTDOMAIN = im-config
+# makefile (from '.make-settings', line 9)
+PREV_FINAL_CFLAGS = -std=c99 -pedantic -Wall -O2 -g -ggdb -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -I../deps/jemalloc/include
+# environment
+SNAP = /snap/code/104
+# environment
+SNAP_VERSION = 6d9b74a7
+# makefile (from 'Makefile', line 86)
+DEPENDENCY_TARGETS = hiredis linenoise lua jemalloc
+# makefile (from 'Makefile', line 112)
+REDIS_CLI_OBJ = anet.o sds.o adlist.o redis-cli.o zmalloc.o release.o anet.o ae.o crc64.o
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from '.make-settings', line 6)
+LDFLAGS = 
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/104/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 15)
+release_hdr := #define REDIS_GIT_SHA1 "e6cc9038" #define REDIS_GIT_DIRTY "331"
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2054
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from '.make-settings', line 3)
+OPT = -O2
+# environment
+GTK_IM_MODULE = ibus
+# environment
+SNAP_INSTANCE_KEY = 
+# makefile (from 'Makefile', line 99)
+MAKECOLOR = "\033[32;1m"
+# environment
+PWD = /home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0/src
+# makefile (from 'Makefile', line 95)
+CCCOLOR = "\033[34m"
+# makefile (from 'Makefile', line 113)
+REDIS_BENCHMARK_NAME = redis-benchmark
+# environment
+XDG_SEAT = seat0
+# makefile (from 'Makefile', line 16)
+uname_S := Linux
+# environment
+SSH_AGENT_PID = 1481
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'Makefile', line 92)
+REDIS_LD = $(QUIET_LINK)$(CC) $(FINAL_LDFLAGS)
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/xuegwu
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/xuegwu/.config/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
+# makefile (from 'Makefile', line 67)
+FINAL_LDFLAGS = $(LDFLAGS) $(REDIS_LDFLAGS) $(DEBUG) -rdynamic
+# makefile (from '.make-settings', line 2)
+WARN = -Wall
+# environment
+LOGNAME = xuegwu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = 7MAcmRK10zEWKFCoTsh6TuQgSDjQm8B6YfPCQrWcNAHs5213YWfN
+# automatic
++F = $(notdir $+)
+# makefile (from 'Makefile', line 26)
+INSTALL_BIN = $(PREFIX)/bin
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from 'Makefile', line 108)
+REDIS_SERVER_NAME = redis-server
+# environment
+SNAP_USER_COMMON = /home/xuegwu/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+MAKE_VERSION := 4.1
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 1
+# makefile (from 'Makefile', line 91)
+REDIS_CC = $(QUIET_CC)$(CC) $(FINAL_CFLAGS)
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+SNAP_REAL_HOME = /home/xuegwu
+# makefile (from '.make-settings', line 8)
+REDIS_LDFLAGS = 
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/xuegwu/snap/code/104
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 111)
+REDIS_CLI_NAME = redis-cli
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+XDG_SESSION_ID = 1
+# environment
+USER = xuegwu
+# environment
+SNAP_REVISION = 104
+# makefile (from 'Makefile', line 103)
+QUIET_CC = @printf '    %b %b\n' $(CCCOLOR)CC$(ENDCOLOR) $(SRCCOLOR)$@$(ENDCOLOR) 1>&2;
+# environment
+LC_MONETARY = en_US.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from '.make-settings', line 10)
+PREV_FINAL_LDFLAGS = -g -ggdb -rdynamic
+# makefile (from 'Makefile', line 116)
+REDIS_CHECK_DUMP_OBJ = redis-check-dump.o lzf_c.o lzf_d.o crc64.o
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# makefile (from '.make-settings', line 1)
+STD = -std=c99 -pedantic
+# environment
+OLDPWD = /home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-885dff07-1.70.1-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrRw
+# environment
+MFLAGS = -pqrRw
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = en_US.UTF-8
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 114)
+REDIS_BENCHMARK_OBJ = ae.o anet.o redis-benchmark.o sds.o adlist.o zmalloc.o redis-benchmark.o
+# environment
+TEXTDOMAINDIR = /usr/share/locale/
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 115)
+REDIS_CHECK_DUMP_NAME = redis-check-dump
+# environment
+SNAP_COOKIE = 7MAcmRK10zEWKFCoTsh6TuQgSDjQm8B6YfPCQrWcNAHs5213YWfN
+# environment
+LC_NUMERIC = en_US.UTF-8
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 109)
+REDIS_SENTINEL_NAME = redis-sentinel
+# makefile (from '.make-settings', line 4)
+MALLOC = jemalloc
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 93)
+REDIS_INSTALL = $(QUIET_INSTALL)$(INSTALL)
+# makefile (from 'Makefile', line 97)
+SRCCOLOR = "\033[33m"
+# environment
+QT4_IM_MODULE = xim
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+ 
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 104)
+QUIET_LINK = @printf '    %b %b\n' $(LINKCOLOR)LINK$(ENDCOLOR) $(BINCOLOR)$@$(ENDCOLOR) 1>&2;
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# makefile (from 'Makefile', line 88)
+FINAL_LIBS = -lm -pthread ../deps/jemalloc/lib/libjemalloc.a -ldl
+# environment
+WINDOWPATH = 1
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = en_US.UTF-8
+# environment
+LANG = C
+# makefile (from 'Makefile', line 96)
+LINKCOLOR = "\033[34;1m"
+# environment
+VSCODE_PID = 2823
+# makefile (from 'Makefile', line 87)
+FINAL_CFLAGS = $(STD) $(WARN) $(OPT) $(DEBUG) $(CFLAGS) $(REDIS_CFLAGS) -I../deps/hiredis -I../deps/linenoise -I../deps/lua/src -DUSE_JEMALLOC -I../deps/jemalloc/include
+# makefile (from 'Makefile', line 118)
+REDIS_CHECK_AOF_OBJ = redis-check-aof.o
+# makefile (from 'Makefile', line 98)
+BINCOLOR = "\033[37;1m"
+# variable set hash-table stats:
+# Load=174/1024=17%, Rehash=0, Collisions=44/292=15%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 800021): 119 files, no impossibilities.
+
+# 119 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.c .make-prerequisites
+#  recipe to execute (from 'Makefile', line 191):
+	$(REDIS_CC) -c $<
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+bio.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lzf_c.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+zipmap.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t_set.o: t_set.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rio.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+aof.o: aof.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h bio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/help.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 239):
+	@../utils/generate-command-help.rb > help.h
+
+rand.o: rand.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lzf_c.o: lzf_c.c lzfP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis.o: redis.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h cluster.h slowlog.h bio.h asciilogo.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+t_list.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+version.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bitops.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ae_evport.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: redis-server redis-sentinel redis-cli redis-benchmark redis-check-dump redis-check-aof
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/17=0%
+#  recipe to execute (from 'Makefile', line 121):
+	@echo ""
+	@echo "Hint: To run 'make test' is a good idea ;)"
+	@echo ""
+
+bio.o: bio.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h bio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+endianconv.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+anet.o: anet.c fmacros.h anet.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: all dep persist-settings clean distclean lcov
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+asciilogo.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../deps/linenoise/linenoise.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ae.o: ae.c ae.h zmalloc.h config.h ae_kqueue.c ae_epoll.c ae_select.c ae_evport.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-check-dump.o: redis-check-dump.c lzf.h crc64.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-check-dump: redis-check-dump.o lzf_c.o lzf_d.o crc64.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 181):
+	$(REDIS_LD) -o $@ $^ $(FINAL_LIBS)
+
+32bit:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 224):
+	@echo ""
+	@echo "WARNING: if it fails under Linux you probably need to install libc6-dev-i386"
+	@echo ""
+	$(MAKE) CFLAGS="-m32" LDFLAGS="-m32"
+
+redis-sentinel: redis-server
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 169):
+	$(REDIS_INSTALL) $(REDIS_SERVER_NAME) $(REDIS_SENTINEL_NAME)
+
+# Not a target:
+ziplist.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sds.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ae_select.o: ae_select.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+zmalloc.o: zmalloc.c config.h zmalloc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+object.o: object.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rio.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+t_string.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+valgrind:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 236):
+	$(MAKE) OPTIMIZATION="-O0" MALLOC="libc"
+
+multi.o: multi.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+distclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 199):
+	-(cd ../deps && $(MAKE) distclean)
+	-(rm -f .make-*)
+
+# Not a target:
+sentinel.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ae_epoll.o: ae_epoll.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redisassert.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cluster.o: cluster.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h cluster.h endianconv.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redis.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lzf_d.o: lzf_d.c lzfP.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+hyperloglog.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-check-aof: redis-check-aof.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 185):
+	$(REDIS_LD) -o $@ $^ $(FINAL_LIBS)
+
+# Not a target:
+pubsub.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile.dep:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:25.123649273
+#  File has been updated.
+#  Successfully updated.
+
+redis-check-aof.o: redis-check-aof.c fmacros.h config.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+adlist.o: adlist.c .make-prerequisites adlist.c adlist.h zmalloc.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'adlist'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := adlist.o
+# automatic
+# % := 
+# automatic
+# * := adlist
+# automatic
+# + := adlist.c .make-prerequisites adlist.c adlist.h zmalloc.h
+# automatic
+# | := 
+# automatic
+# < := adlist.c
+# automatic
+# ^ := adlist.c .make-prerequisites adlist.h zmalloc.h
+# automatic
+# ? := adlist.c .make-prerequisites adlist.h zmalloc.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=5/27=19%
+#  recipe to execute (from 'Makefile', line 191):
+	$(REDIS_CC) -c $<
+
+# Not a target:
+blocked.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sha1.o: sha1.c sha1.h config.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rio.o: rio.c fmacros.h rio.h sds.h util.h crc64.h config.h redis.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h rdb.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+intset.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sds.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+endianconv.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../deps/lua/src/lua.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:25.123649273
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+util.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+replication.o: replication.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+networking.o: networking.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+debug.o: debug.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h sha1.h crc64.h bio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ziplist.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+sort.o: sort.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h pqsort.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test: redis-server redis-check-aof
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 205):
+	@(cd ..; ./runtest)
+
+# Not a target:
+lzfP.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dep:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 131):
+	$(REDIS_CC) -MM *.c > Makefile.dep
+
+t_zset.o: t_zset.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+scripting.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ae_kqueue.o: ae_kqueue.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+slowlog.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.make-prerequisites:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-15 08:40:25.123649273
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 152):
+	@touch $@
+
+# Not a target:
+t_set.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+aof.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rand.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+intset.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+notify.o: notify.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-cli: anet.o sds.o adlist.o redis-cli.o zmalloc.o release.o anet.o ae.o crc64.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 173):
+	$(REDIS_LD) -o $@ $^ ../deps/hiredis/libhiredis.a ../deps/linenoise/linenoise.o $(FINAL_LIBS)
+
+crc64.o: crc64.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test-sentinel: redis-sentinel
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 208):
+	@(cd ..; ./runtest-sentinel)
+
+redis-cli.o: redis-cli.c fmacros.h version.h ../deps/hiredis/hiredis.h sds.h zmalloc.h ../deps/linenoise/linenoise.h help.h anet.h ae.h
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pqsort.o: pqsort.c
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+memtest.o: memtest.c config.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+util.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+rdb.o: rdb.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h lzf.h zipmap.h endianconv.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+bio.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+anet.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../deps/hiredis/async.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+dict.o: dict.c fmacros.h dict.h zmalloc.h redisassert.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ae.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redis-check-dump.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+db.o: db.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h cluster.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-benchmark: ae.o anet.o redis-benchmark.o sds.o adlist.o zmalloc.o redis-benchmark.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 177):
+	$(REDIS_LD) -o $@ $^ ../deps/hiredis/libhiredis.a $(FINAL_LIBS)
+
+# Not a target:
+slowlog.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-benchmark.o: redis-benchmark.c fmacros.h ae.h ../deps/hiredis/hiredis.h sds.h adlist.h zmalloc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+zipmap.o: zipmap.c zmalloc.h endianconv.h config.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ae_select.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+zmalloc.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+object.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rand.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+multi.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ae_epoll.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.make-settings:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:25.123649273
+#  File has been updated.
+#  Successfully updated.
+
+slowlog.o: slowlog.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h slowlog.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cluster.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redis.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lzf_d.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t_hash.o: t_hash.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+t_zset.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redis-check-aof.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+adlist.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:25.123649273
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+release.o: release.c release.h version.h crc64.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sha1.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+config.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+setproctitle.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+anet.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+redis-server: adlist.o ae.o anet.o dict.o redis.o sds.o zmalloc.o lzf_c.o lzf_d.o pqsort.o zipmap.o sha1.o ziplist.o release.o networking.o util.o object.o db.o replication.o rdb.o t_string.o t_list.o t_set.o t_zset.o t_hash.o config.o aof.o pubsub.o multi.o debug.o sort.o intset.o syncio.o cluster.o crc16.o endianconv.o slowlog.o scripting.o bio.o rio.o rand.o memtest.o crc64.o bitops.o sentinel.o notify.o setproctitle.o blocked.o hyperloglog.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-15 08:40:26.075638431
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/17=0%
+#  recipe to execute (from 'Makefile', line 165):
+	$(REDIS_LD) -o $@ $^ ../deps/hiredis/libhiredis.a ../deps/lua/src/liblua.a $(FINAL_LIBS)
+
+# Not a target:
+rdb.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ae.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bench: redis-benchmark
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 221):
+	./$(REDIS_BENCHMARK_NAME)
+
+crc16.o: crc16.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+replication.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../deps/lua/src/lauxlib.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+networking.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+debug.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sort.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+syncio.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+
+# Not a target:
+../deps/hiredis/hiredis.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 194):
+	rm -rf $(REDIS_SERVER_NAME) $(REDIS_SENTINEL_NAME) $(REDIS_CLI_NAME) $(REDIS_BENCHMARK_NAME) $(REDIS_CHECK_DUMP_NAME) $(REDIS_CHECK_AOF_NAME) *.o *.gcda *.gcno *.gcov redis.info lcov-html
+
+# Not a target:
+zmalloc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:26.20363697
+#  File has been updated.
+#  Successfully updated.
+
+sds.o: sds.c sds.h zmalloc.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ae_kqueue.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+cluster.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t_list.o: t_list.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+bitops.o: bitops.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+adlist.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:25.123649273
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+sha1.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ae_evport.o: ae_evport.c
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+notify.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../deps/lua/src/lualib.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+crc64.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+endianconv.o: endianconv.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redis-cli.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pqsort.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+rdb.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+memtest.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+lzf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dict.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+fmacros.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+ziplist.o: ziplist.c zmalloc.h util.h sds.h ziplist.h endianconv.h config.h redisassert.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+db.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+t_string.o: t_string.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+redis-benchmark.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gcov:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 230):
+	$(MAKE) REDIS_CFLAGS="-fprofile-arcs -ftest-coverage -DCOVERAGE_TEST" REDIS_LDFLAGS="-fprofile-arcs -ftest-coverage"
+
+sentinel.o: sentinel.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h ../deps/hiredis/hiredis.h ../deps/hiredis/async.h ../deps/hiredis/hiredis.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+config.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+zipmap.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+hyperloglog.o: hyperloglog.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+setproctitle.o: setproctitle.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+pubsub.o: pubsub.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+check: test
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+lcov:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 213):
+	$(MAKE) gcov
+	@(set -e; cd ..; ./runtest --clients 1)
+	@geninfo -o redis.info .
+	@genhtml --legend -o lcov-html redis.info
+
+blocked.o: blocked.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+intset.o: intset.c intset.h zmalloc.h endianconv.h config.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+crc64.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+config.o: config.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h cluster.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+t_hash.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+pqsort.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+util.o: util.c fmacros.h util.h sds.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+release.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+persist-settings: distclean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 136):
+	echo STD=$(STD) >> .make-settings
+	echo WARN=$(WARN) >> .make-settings
+	echo OPT=$(OPT) >> .make-settings
+	echo MALLOC=$(MALLOC) >> .make-settings
+	echo CFLAGS=$(CFLAGS) >> .make-settings
+	echo LDFLAGS=$(LDFLAGS) >> .make-settings
+	echo REDIS_CFLAGS=$(REDIS_CFLAGS) >> .make-settings
+	echo REDIS_LDFLAGS=$(REDIS_LDFLAGS) >> .make-settings
+	echo PREV_FINAL_CFLAGS=$(FINAL_CFLAGS) >> .make-settings
+	echo PREV_FINAL_LDFLAGS=$(FINAL_LDFLAGS) >> .make-settings
+	-(cd ../deps && $(MAKE) $(DEPENDENCY_TARGETS))
+
+# Not a target:
+help.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+syncio.o: syncio.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+dict.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+noopt:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 233):
+	$(MAKE) OPTIMIZATION="-O0"
+
+# Not a target:
+../deps/lua/src/luaconf.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 242):
+	@mkdir -p $(INSTALL_BIN)
+	$(REDIS_INSTALL) $(REDIS_SERVER_NAME) $(INSTALL_BIN)
+	$(REDIS_INSTALL) $(REDIS_BENCHMARK_NAME) $(INSTALL_BIN)
+	$(REDIS_INSTALL) $(REDIS_CLI_NAME) $(INSTALL_BIN)
+	$(REDIS_INSTALL) $(REDIS_CHECK_DUMP_NAME) $(INSTALL_BIN)
+	$(REDIS_INSTALL) $(REDIS_CHECK_AOF_NAME) $(INSTALL_BIN)
+
+# Not a target:
+crc16.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+scripting.o: scripting.c redis.h fmacros.h config.h ../deps/lua/src/lua.h ../deps/lua/src/luaconf.h ae.h sds.h dict.h adlist.h zmalloc.h anet.h ziplist.h intset.h version.h util.h rdb.h rio.h sha1.h rand.h ../deps/lua/src/lauxlib.h ../deps/lua/src/lua.h ../deps/lua/src/lualib.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=180/1024=18%, Rehash=0, Collisions=111/940=12%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 207 / storage = 2222 B / avg = 10 B
+# current buf: size = 8162 B / used = 2222 B / count = 207 / avg = 10 B
+
+# strcache performance: lookups = 1043 / hit rate = 80%
+# hash-table stats:
+# Load=207/8192=3%, Rehash=0, Collisions=47/1043=5%
+# Finished Make data base on Mon Aug 15 23:29:44 2022
+
+# make[1]: Leaving directory '/home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0/src'
+ 
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Aug 15 23:29:44 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = letter
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 2
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/104
+# environment
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_translationsConfigFile":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/tcf.json","_cacheRoot":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn","_resolvedLanguagePackCoreLocation":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"/home/xuegwu/.config/Code/clp/08bdb29c43b4c03defdaaecc51ad48b6.zh-cn/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /snap/code/104/usr/share/code/code
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = xuegwu
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+CLUTTER_IM_MODULE = xim
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/xuegwu
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/104/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/xuegwu:@/tmp/.ICE-unix/1332,unix/xuegwu:/tmp/.ICE-unix/1332
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/xuegwu/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+TEXTDOMAIN = im-config
+# environment
+SNAP = /snap/code/104
+# environment
+SNAP_VERSION = 6d9b74a7
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/104/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2054
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+GTK_IM_MODULE = ibus
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/xuegwu/work/Reading-and-comprehense-redis-cluster/redis-3.0
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1481
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = Unity
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/xuegwu
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/xuegwu/.config/Code/CachedData/6d9b74a70ca9c7733b29f0456fd8195364076dda
+# environment
+LOGNAME = xuegwu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = 7MAcmRK10zEWKFCoTsh6TuQgSDjQm8B6YfPCQrWcNAHs5213YWfN
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/xuegwu/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+MAKE_VERSION := 4.1
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 1
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+SNAP_REAL_HOME = /home/xuegwu
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/xuegwu/snap/code/104
+# environment
+SHLVL = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+XDG_SESSION_ID = 1
+# environment
+USER = xuegwu
+# environment
+SNAP_REVISION = 104
+# environment
+LC_MONETARY = en_US.UTF-8
+# makefile
+.DEFAULT_GOAL := default
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-885dff07-1.70.1-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = en_US.UTF-8
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+TEXTDOMAINDIR = /usr/share/locale/
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = 7MAcmRK10zEWKFCoTsh6TuQgSDjQm8B6YfPCQrWcNAHs5213YWfN
+# environment
+LC_NUMERIC = en_US.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# environment
+QT4_IM_MODULE = xim
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 1
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = en_US.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 2823
+# variable set hash-table stats:
+# Load=129/1024=13%, Rehash=0, Collisions=23/159=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 799591): 23 files, no impossibilities.
+ 
+
+# 23 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: ''
+#  Modification time never checked.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := all
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  recipe to execute (from 'Makefile', line 6):
+	cd src && $(MAKE) $@
+
+.PHONY: install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-15 08:40:24.811652822
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 6):
+	cd src && $(MAKE) $@
+
+default: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 6):
+	cd src && $(MAKE) $@
+
+install:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	cd src && $(MAKE) $@
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/22=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 31 / storage = 285 B / avg = 9 B
+# current buf: size = 8162 B / used = 285 B / count = 31 / avg = 9 B
+
+# strcache performance: lookups = 43 / hit rate = 27%
+# hash-table stats:
+# Load=31/8192=0%, Rehash=0, Collisions=1/43=2%
+# Finished Make data base on Mon Aug 15 23:29:44 2022
+
+ 
